@@ -1,0 +1,87 @@
+.browse-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.browse-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+.browse-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.browse-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 480px;
+}
+
+.browse-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.results-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.error-msg {
+  background: var(--error-bg);
+  color: var(--error-text);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  border: 1px solid #fecaca;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+}
+
+.empty-text {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.empty-clear-btn {
+  margin-top: 0.5rem;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: background 0.15s;
+}
+
+.empty-clear-btn:hover {
+  background: var(--bg);
+}
