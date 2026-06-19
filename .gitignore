@@ -3,5 +3,8 @@ frontend/dist/
 
 joblisting/target/
 
-.idea/
-.vscode/
+**/.idea/
+**/.vscode/
+
+.DS_Store
+Thumbs.db
