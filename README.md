@@ -731,18 +731,6 @@ graph LR
 
 ---
 
-# Author
-
-<table>
-  <tr>
-    <td align="center">
-      <strong>sanacodes</strong><br/>
-      Full-Stack Developer<br/>
-      <br/>
-      <a href="https://github.com/sanacodes">GitHub</a>
-    </td>
-  </tr>
-</table>
 
 ---
 
