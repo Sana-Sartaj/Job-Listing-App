@@ -1,10 +1,61 @@
-frontend/node_modules/
-frontend/dist/
-
+# ─── Build output & generated files ─────────────────────────────────────────
 joblisting/target/
+frontend/dist/
+frontend/node_modules/
 
+# ─── IDE ─────────────────────────────────────────────────────────────────────
 **/.idea/
 **/.vscode/
 
+# ─── OS noise ─────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+
+# ─── Environment variable files ───────────────────────────────────────────────
+# These hold the real MONGODB_URI, API keys, and other runtime secrets.
+# Commit .env.example (safe template) but never the real files.
+.env
+.env.*
+.env.local
+.env.*.local
+!.env.example
+frontend/.env
+frontend/.env.*
+frontend/.env.local
+frontend/.env.*.local
+
+# ─── Spring Boot local config overrides ──────────────────────────────────────
+# application.properties (env-var-based) stays tracked.
+# Profile-specific overrides (application-local, application-dev, etc.)
+# often contain real credentials and must never be committed.
+joblisting/src/main/resources/application-local.properties
+joblisting/src/main/resources/application-dev.properties
+joblisting/src/main/resources/application-prod.properties
+joblisting/src/main/resources/application-*.properties
+joblisting/src/main/resources/application-*.yml
+joblisting/src/main/resources/application-*.yaml
+
+# ─── Log files ────────────────────────────────────────────────────────────────
+# Spring Boot / Maven logs echo the full MongoClientSettings including the
+# cluster host, credentials, and connection URI.
+*.log
+*.log.*
+logs/
+joblisting/logs/
+
+# ─── Java keystore, certificates, and private keys ───────────────────────────
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+*.cert
+*.cer
+
+# ─── Maven settings (may store Nexus / repository passwords) ─────────────────
+joblisting/.mvn/settings.xml
+
+# ─── Vite / frontend secrets (env vars injected at build time) ───────────────
+# Only safe if no VITE_* keys (like API tokens) are needed.
+# If you add VITE_SOME_KEY=... later, ensure it is not a private secret.

@@ -1,5 +1,20 @@
 HELP.md
 target/
+
+### Secrets — never commit real credentials ###
+src/main/resources/application-local.properties
+src/main/resources/application-dev.properties
+src/main/resources/application-prod.properties
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+src/main/resources/application-*.yaml
+*.log
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
